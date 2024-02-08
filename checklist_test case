@@ -1,0 +1,44 @@
+Penetration testing sample test cases (test scenarios):
+
+Remember this is not functional testing. In Pentest your goal is to find security holes in the system. Below are some generic test cases and not necessarily applicable for all applications.
+
+1) Check if web application is able to identify spam attacks on contact forms used in the website.
+2) Proxy server – Check if network traffic is monitored by proxy appliances. Proxy server make it difficult for hackers to get internal details of the network thus protecting the system from external attacks.
+3) Spam email filters – Verify if incoming and outgoing email traffic is filtered and unsolicited  emails are blocked. Many email clients come with in-build spam filters which needs to be configured as per your needs. These configuration rules can be applied on email headers, subject or body.
+4) Firewall – Make sure entire network or computers are protected with Firewall. Firewall can be a software or hardware to block unauthorized access to system. Firewall can prevent sending data outside the network without your permission.
+5) Try to exploit all servers, desktop systems, printers and network devices.
+6) Verify that all usernames and passwords are encrypted and transferred over secured connection like https.
+7) Verify information stored in website cookies. It should not be in readable format.
+8 ) Verify previously found vulnerabilities to check if the fix is working.
+9) Verify if there is no open port in network.
+11) Verify all telephone devices.
+12) Verify WIFI network security.
+13) Verify all HTTP methods. PUT and Delete methods should not be enabled on web server .
+14) Password should be at least 8 character long containing at least one number and one special character.
+15) Username should not be like “admin” or “administrator”.
+16) Application login page should be locked upon few unsuccessful login attempts.
+17) Error messages should be generic and should not mention specific error details like “Invalid username” or “Invalid password”.
+19) Verify if special characters, html tags and scripts are handled properly as an input value.
+20) Internal system details should not be revealed in any of the error or alert messages.
+21) Custom error messages should be displayed to end user in case of web page crash.
+22) Verify use of registry entries. Sensitive information should not be kept in registry.
+23) All files must be scanned before uploading to server.
+24) Sensitive data should not be passed in urls while communicating with different internal modules of the web application.
+25) There should not be any hard coded username or password in the system.
+26) Verify all input fields with long input string with and without spaces.
+27) Verify if reset password functionality is secure.
+28) Verify application for SQL Injection.
+29) Verify application for Cross Site Scripting.
+31) Important input validations should be done at server side instead of JavaScript checks at client side.
+32) Critical resources in the system should be available to authorized persons and services only.
+33) All access logs should be maintained with proper access permissions.
+34) Verify user session ends upon log off.
+35) Verify that directory browsing is disabled on server.
+36) Verify that all applications and database versions are up to date.
+37) Verify url manipulation to check if web application is not showing any unwanted information.
+38) Verify memory leak and buffer overflow.
+39) Verify if incoming network traffic is scanned to find Trojan attacks.
+40) Verify if system is safe from Brute Force Attacks – a trial and error method to find sensitive information like passwords.
+41) Verify if system or network is secured from DoS (denial-of-service) attacks. Hacker can target network or single computer with continuous requests due to which resources on target system gets overloaded resulting in denial of service for legit requests.
+
+These are just the basic test scenarios to get started with Pentest. There are hundreds of advanced penetration methods which can be done either manually or with the help of automation tools.
